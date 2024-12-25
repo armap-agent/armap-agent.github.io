@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ARMAP: Autonomous Agents from automatic reward modeling and planning">
+  <meta name="keywords" content="Autonomous, Agent, Reward Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARMAP: Autonomous Agents from automatic reward modeling and planning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<style>
+  .rainbow-text {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: #A3A3A3 1px 1px 1px;
+  }
+  .rainbow-text .block-line > span {
+    display: inline-block;
+  }
+  .subheader {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 25px;
+    line-height: 44px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+</style>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-2 publication-title">
+              <span class="rainbow-text">
+                  <span style="color:#80ED12;">A</span>
+                  <span style="color:#A5D604;">R</span>
+                  <span style="color:#C7B601;">M</span>
+                  <span style="color:#E39209;">A</span>
+                  <span style="color:#F66C1C;">P</span> <br>
+              </span>
+              Autonomous Agents from Automatic Reward Modeling And Planning
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zfchenunique.github.io/">Zhenfang Chen</a>&dagger;<sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://chendl02.github.io">Delin Chen</a>&dagger;<sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://threesr.github.io/">Rui Sun</a>&dagger;<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/heaplax">Wenjun Liu</a>&dagger;<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://people.csail.mit.edu/ganchuang/">Chuang Gan</a><sup>1,2</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>MIT-IBM Watson AI Lab,</span>
+            <span class="author-block"><sup>2</sup>UMass Amherst,</span>
+            <span class="author-block"><sup>3</sup>UCLA</span>
+          </div>
+            &dagger;Equal contribution
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://chendl02.github.io/ARMAP"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (Coming Soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://chendl02.github.io/ARMAP"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted playsinline height="100%">
+        <source src="./static/videos/armap_website_case.mp4"
+                type="video/mp4">
+      </video>
+      <!-- <img src="./static/images/overview.svg" width="100%"> -->
+      <h2 class="subtitle has-text-centered">
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <br>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs) have demonstrated remarkable capabilities across a range of text-generation tasks. 
+            However, LLMs still struggle with problems requiring multi-step decision-making and environmental feedback.
+            Unlike pure text data, collecting large-scale decision-making data is challenging. Moreover, many powerful LLMs are only accessible through APIs, which hinders their fine-tuning for agent tasks due to cost and complexity. 
+            To address LLM agents' limitations, we propose a framework that can <b>automatically learn a reward model from the environment without human annotations</b>. 
+            This model can be used to evaluate the action trajectories of LLM agents and provide heuristics for task planning. 
+            This reward model can be integrated with LLM-based agents and various planning algorithms to enhance task-solving performance, 
+            potentially revolutionizing the application of LLMs in complex and interactive environments. 
+            The effectiveness and generalizability of our framework are demonstrated through evaluations conducted on different agent benchmarks 
+            such as <b>online shopping, scientific reasoning, mathematical problem-solving, house-holding</b> and <b>clinical scenario</b>.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+  
+  
+  <div class="container is-max-desktop">
+    <hr class="solid">
+    <div class="column is-full-width is-centered has-text-centered">
+      <h2 class="title is-3">🔭Overview</h2>
+      <br>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <!-- <div class="slide"><video id="teaser" autoplay muted loop playsinline height="100%" style="width:100%;">
+      <source src="./static/videos/structure.mp4"
+              type="video/mp4">
+    </video></div> -->
+    <img src="./static/images/overview.svg" width="100%">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified" style="margin-top: 20px;">
+          <p>
+            <b>The pipeline of our ARMAP framework.</b> (1) We first generate an initial task instruction using LLMs with in-context learning and sample trajectories aligned with the initial language instructions in the environment. 
+            (2) Next, we use the LLM to summarize the sampled trajectories and generate refined task instructions that better match these trajectories. 
+            (3) We then modify specific actions within the trajectories to perform new actions in the environment, collecting negative trajectories in the process. 
+            
+            (4) Using the refined task instructions, along with both positive and negative trajectories, we train a lightweight reward model to distinguish between matching and non-matching trajectories. 
+            (5) The learned reward model can then collaborate with various LLM agents to improve task planning.
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- 
+    <div class="container is-max-desktop">
+      <hr class="solid">
+      <div class="column is-full-width is-centered has-text-centered">
+        <h2 class="title is-3">📑Results</h2>
+        <br>
+      </div>
+    </div>
+    <div class="columns is-centered">
+
+      <div class="column is-two-thirds">
+        <div class="content">
+          <h2 class="title is-3">LVBench</h2>
+          <img src="./static/images/lvbench.png" alt="📑Result" style="width:150%;">
+        </div>
+      </div>
+
+      <div class="column is-one-thirds">
+        <h2 class="title is-3">Egoschema</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/egoschema.png" alt="📑Result" style="width:100%;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <p>
+            Experimental Results on <strong>LVBench</strong> and <strong>EgoSchema</strong>. 
+          </p> -->
+    <div class="container is-max-desktop">
+      <hr class="solid">
+      <div class="column is-full-width is-centered has-text-centered">
+        <h2 class="title is-3">🎈Qualitative Results</h2>
+        <br>
+      </div>
+    </div>
+    <div class="container is-max-desktop">    
+      <div class="container is-max-desktop">
+        <img src="./static/images/control.svg" width="100%">
+      </div>
+      <p><b>Controllable Generation.</b> A typical example of customized reward target for shorter trajectory generation. 
+        On the left, we show the default greedy decoding generates a long trajectory without finding the target product. 
+        In the middle, we show our default reward can guide the LLM agent to generate a correct but long trajectory. 
+        On the right, we show our framework with a customized reward target (default reward with trajectory length penalty) for shorter trajectories, which finds a correct and short trajectory for the target product.</p>
+      <br>
+      <p>More showcases are available in our <a href="https://chendl02.github.io/ARMAP" target="_blank">paper</a>.</p>
+    </div>
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified" style="margin-top: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>TBD</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://chendl02.github.io/ARMAP">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://chendl02.github.io/ARMAP" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The website template is from the <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
